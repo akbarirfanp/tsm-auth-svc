@@ -1,8 +1,7 @@
-<div center>
 ## Task Management - Auth Service
 TaskStorm Manager (TSM) is a modern, microservices-driven task and project management platform designed to streamline workflows, enhance collaboration, and boost team productivity. 
 Built with scalability and flexibility in mind, TSM empowers organizations to manage projects efficiently, from individual tasks to complex team-based initiatives.
-</div>
+
 ## Directory Structure
 You can check the directory structure from official documentation:
 https://www.goravel.dev/getting-started/directory-structure.html
