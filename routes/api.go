@@ -1,12 +1,12 @@
 package routes
 
 import (
+	"github.com/goravel/framework/contracts/route"
 	"github.com/goravel/framework/facades"
-
-	"goravel/app/http/controllers"
 )
 
 func Api() {
-	userController := controllers.NewUserController()
-	facades.Route().Get("/users/{id}", userController.Show)
+	facades.Route().Prefix("/api/v1").Group(func(router route.Router) {
+		AuthServiceRoutes(router)
+	})
 }
