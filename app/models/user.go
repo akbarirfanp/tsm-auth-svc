@@ -6,7 +6,7 @@ import (
 
 type User struct {
 	orm.Model
-	Name     string
+	Username     string
 	Email    string
 	Password string
 }
