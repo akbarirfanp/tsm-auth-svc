@@ -1,6 +1,7 @@
 ## Task Management - Auth Service
 TaskStorm Manager (TSM) is a modern, microservices-driven task and project management platform designed to streamline workflows, enhance collaboration, and boost team productivity. 
-Built with scalability and flexibility in mind, TSM empowers organizations to manage projects efficiently, from individual tasks to complex team-based initiatives.
+Built with scalability and flexibility in mind, TSM empowers organizations to manage projects efficiently, from individual tasks to complex team-based initiatives. 
+TSM Auth Service is the authentication and authorization microservice for the TaskStorm Manager (TSM) platform. It provides a secure and centralized identity layer that handles user login, credential management, and access control across all services in the ecosystem.
 
 ## Directory Structure
 You can check the directory structure from official documentation:
