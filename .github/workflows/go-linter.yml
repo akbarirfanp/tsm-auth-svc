@@ -1,0 +1,32 @@
+name: Run tests
+
+on:
+  push:
+
+jobs:
+  lint:
+    name: Run go linters
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        go-version: [ '1.23.x', '1.24.x']
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: ${{ matrix.go-version }}
+
+      - name: Install golangci-lint
+        uses: golangci/golangci-lint-action@v6
+        with:
+          version: latest
+          args: --config .golangci.yml --timeout 5m
+
+      - name: Run go linter
+        run: |
+          golangci-lint run --config .golangci.yml --timeout 5m || \
+          (echo "Golang linter found issues! Please fix them before merging." && exit 1)

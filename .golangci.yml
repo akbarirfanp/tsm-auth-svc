@@ -1,0 +1,30 @@
+linters:
+  enable:
+    - errcheck
+    - gosimple
+    - asasalint
+    - bodyclose
+    - decorder
+    - dupl
+    - fatcontext
+    - godot
+    - goimports
+    - rowserrcheck
+    - sqlclosecheck
+    - unparam
+    - wastedassign
+    - whitespace
+    - perfsprint
+    - noctx
+    - zerologlint
+
+  disable:
+    - staticcheck
+
+issues:
+  max-issues-per-linter: 100
+  max-same-issues: 10
+  uniq-by-line: false
+  new: false
+  whole-files: true
+  fix: true
