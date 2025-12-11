@@ -30,3 +30,6 @@ go run . artisan --help
 ## Documentation
 
 Online documentation [https://www.goravel.dev](https://www.goravel.dev)
+
+How to switch git account:
+Go to Credential Manager -> Windows Credentials -> Remove Github Credential
